@@ -40,6 +40,14 @@ Available for purchase as a print or Kindle book.
 
 [PicoBricks IDEs](https://picobricks.com/pages/ide)
 
+### Pico Bricks Ebooks
+
+[Project Book](https://picobricks.com/pages/picobricks-project-book-v2)&mdash;This book gives instructions for programming projects using the PicoBlocks MicroBricks drag-and-drop IDE, the Thonny Python IDE and the Arduino IDE with the C programming language.
+
+[IDE Book](https://picobricks.com/pages/picobricks-project-book-v2)&mdash;This book only shows how to program the projects using MicroBricks but gives those instructions in more detail than the other book.
+
+Both books have the same projects. Projects 1 through 11, 13 and 15 can be done with just the Pico Blocks Base kit. Projects 12, 14 and 16 through 25 require components that are not included in the base kit.
+
 
 
 ------
