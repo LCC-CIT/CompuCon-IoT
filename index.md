@@ -6,6 +6,8 @@ The main thing we will be doing is building electronic projects with Rapberry Pi
 
 [Intro to microcontrollers](Notes/IntroToMicrocontrollers.html)
 
+[Intro to Raspberry Pi Pico](Notes/IntroToRpPico.html)
+
 [Raspberry Pi Pico resources](RapberryPiPicoReferences.html)
 
 
