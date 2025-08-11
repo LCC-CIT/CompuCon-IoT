@@ -1,6 +1,6 @@
 <h1>Intro to Raspberry Pi Pico</h1>
 
-![](/Users/birdb/Projects/CompuCon-IoT/Notes/PicoW-A4-Pinout.png)
+![](PicoW-A4-Pinout.png)
 
 
 
