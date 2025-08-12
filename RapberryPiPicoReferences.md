@@ -36,15 +36,21 @@ Available for purchase as a print or Kindle book.
 
 ## Pico Bricks
 
-[PicoBricks web site](https://picobricks.com/)
+[PicoBricks web site](https://picobricks.com/)&mdash;Official web site
 
 [PicoBricks IDEs](https://picobricks.com/pages/ide)
+Web page based Integrated Development Environments (IDEs)
+A **Chrome browser is required** to use these IDEs. 
+It takes about one minute for each of the IDE web pages to load.
+
+- [PicoBlocks Jr. IDE](https://ide.picobricks.com/horizontal-blocks/horizontalblocks.html)&mdash;Simplified drag-and-drop visual programming.
+- [PicoBlocks IDE](https://ide.picobricks.com/verticalblocks.html)&mdash;Drag-and-drop visual programming or Python text based programming. Can be run programs on a RP Pico board or a simulator.
 
 ### Pico Bricks Ebooks
 
 [Project Book](https://picobricks.com/pages/picobricks-project-book-v2)&mdash;This book gives instructions for programming projects using the PicoBlocks MicroBricks drag-and-drop IDE, the Thonny Python IDE and the Arduino IDE with the C programming language.
 
-[IDE Book](https://picobricks.com/pages/picobricks-project-book-v2)&mdash;This book only shows how to program the projects using MicroBricks but gives those instructions in more detail than the other book.
+[IDE Book](https://picobricks.com/pages/picobricks-ide-e-book-v2)&mdash;This book only shows how to program the projects using MicroBricks but gives those instructions in more detail than the other book.
 
 Both books have the same projects. Projects 1 through 11, 13 and 15 can be done with just the Pico Blocks Base kit. Projects 12, 14 and 16 through 25 require components that are not included in the base kit.
 
