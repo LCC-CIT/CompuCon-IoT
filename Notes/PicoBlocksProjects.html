@@ -7,7 +7,7 @@
 .mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 h1, h2, h3, h4, h5 { white-space: pre-wrap; }
-body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
@@ -27,7 +27,7 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
 img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
-button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-width: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
+button, input, select, textarea { color: inherit; font: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
 *, ::after, ::before { box-sizing: border-box; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
@@ -54,8 +54,8 @@ thead, tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
 table.md-table td { min-width: 32px; }
-.CodeMirror-gutters { border-right-width: 0px; border-right-style: none; border-right-color: currentcolor; background-color: inherit; }
-.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
 .CodeMirror { text-align: left; }
 .CodeMirror-placeholder { opacity: 0.3; }
 .CodeMirror pre { padding: 0px 4px; }
@@ -75,7 +75,7 @@ div.hr:focus { cursor: none; }
 svg { break-inside: avoid; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
 .footnotes + .footnotes { margin-top: 0px; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
 li .mathjax-block, li p { margin: 0.5rem 0px; }
@@ -88,7 +88,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 @media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
-  .typora-export * { print-color-adjust: exact; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
@@ -109,7 +109,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 [contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
-.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
 .math { font-size: 1rem; }
 .md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
@@ -139,14 +139,14 @@ code, pre, samp, tt { font-family: var(--monospace); }
 kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; vertical-align: initial; }
-a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
 [lang="mermaid"] .node text { font-size: 1rem; }
-table tr th { border-bottom-width: 0px; border-bottom-style: none; border-bottom-color: currentcolor; }
+table tr th { border-bottom: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
-iframe { max-width: 100%; width: 100%; border: medium; }
+iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
 mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
@@ -175,7 +175,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
 .outline-content ul { margin-top: 0px; margin-bottom: 0px; }
 .outline-content strong { font-weight: 400; }
-.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
 .outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
 .outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
 .outline-expander:hover::before { content: ""; }
@@ -188,14 +188,14 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
 .outline-label:hover { text-decoration: underline; }
 .outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
-.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
 .outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
 .outline-item-open > .outline-item > .outline-expander::before { content: ""; }
 .outline-children { display: none; }
 .info-panel-tab-wrapper { display: none; }
 .outline-item-open > .outline-children { display: block; }
 .typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
-.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
 .typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
 .typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
 .typora-export-collapse-outline .outline-children { display: none; }
@@ -209,7 +209,7 @@ mjx-container { break-inside: avoid; }
 .md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
 .md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
 .md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
-.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
 .md-alert-text-note { color: rgb(9, 105, 218); }
 .md-alert-text-important { color: rgb(130, 80, 223); }
 .md-alert-text-warning { color: rgb(154, 103, 0); }
@@ -609,10 +609,16 @@ header, .context-menu, .megamenu-content, footer{
 }
 
 
- @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
+
 </style><title>PicoBlocksProjects</title>
 </head>
-<body class='typora-export'><div class='typora-export-content'>
-<div id='write'  class=''><h1 id='picoblocks-projects'><span>PicoBlocks Projects</span></h1><p>&nbsp;</p><h2 id='pico-blocks-ide'><span>Pico Blocks IDE</span></h2><p><a href='https://ide.picobricks.com/verticalblocks.html'><span>Pico Bricks IDE</span></a></p><p><span>This can be used for either drag-and-drop visual programming or Python text based programming. It can run programs on a Pico board or a simulator.</span></p><ul><li><p><span>A </span><strong><span>Chrome browser is required</span></strong><span> to use this IDE.</span></p></li><li><p><span>It takes about one minute for  the IDE web page to load.</span></p></li></ul><h3 id='pico-bricks-ebooks'><span>Pico Bricks Ebooks</span></h3><p><a href='../Books/project_book_v2_compressed.pdf'><span>Project Book</span></a>&mdash;<span>This book gives instructions for programming projects using the PicoBlocks MicroBricks IDE, Thonny Python IDE and Arduino IDE with the C programming language.</span></p><p><a href='../Books/WEB-PicoBricks-IDE-ebook-v2_1_compressed.pdf'><span>IDE Book</span></a>&mdash;<span>This book only shows how to program the projects using MicroBricks but gives those instructions in more detail than the other book.</span></p><p><span>Both books have the same projects. Projects 1 through 11, 13 and 15 can be done with just the Pico Blocks Base kit. Projects 12, 14 and 16 through 25 require components that are not included in the base kit.</span></p><h2 id='projects'><span>Projects</span></h2><ol><li><p><span>Blink</span>&mdash;<span>Blinks an LED</span></p></li></ol><ol start='2' ><li><p><span>Action - Reaction</span>&mdash;</p></li></ol><ol start='3' ><li><p><span>Autonomous Lighting </span></p></li></ol><ol start='4' ><li><p><span>Thermometer </span></p></li></ol><ol start='5' ><li><p><span>Graphic Monitor </span></p></li></ol><ol start='6' ><li><p><span>Dominate the Rhythm </span></p></li></ol><ol start='7' ><li><p><span>Show Your Reaction </span></p></li></ol><ol start='8' ><li><p><span>My Timer </span></p></li></ol><ol start='9' ><li><p><span>Alarm Clock </span></p></li></ol><ol start='10' ><li><p><span>Know Your Color </span></p></li></ol><ol start='11' ><li><p><span>Magic Lamp </span></p></li></ol><ol start='12' ><li><p><span>Smart Cooler </span></p></li></ol><ol start='13' ><li><p><span>Buzz Wire Game </span></p></li></ol><ol start='14' ><li><p><span>Dinosaur Game </span></p></li></ol><ol start='15' ><li><p><span>Night and Day </span></p></li></ol><ol start='16' ><li><p><span>Voice Controlled Robot Car </span></p></li></ol><ol start='17' ><li><p><span>Two Axis Robot Arm </span></p></li></ol><ol start='18' ><li><p><span>Smart House </span></p></li></ol><ol start='19' ><li><p><span>Piggy Bank </span></p></li></ol><ol start='20' ><li><p><span>NFC Smart Door </span></p></li></ol><p><span>1362.21. Automatic Trash Bin </span></p><ol start='22' ><li><p><span>Digital Ruler </span></p></li></ol><ol start='23' ><li><p><span>Air Piano </span></p></li></ol><ol start='24' ><li><p><span>Maze Solver Robot </span></p></li></ol><ol start='25' ><li><p><span>Smart Greenhouse</span></p></li></ol><p>&nbsp;</p><hr /><p><a href='http://creativecommons.org/licenses/by-sa/4.0/'><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" referrerpolicy="no-referrer" alt="Creative Commons License"></a><span> Reference materials compiled by </span><a href='https://profbird.dev'><span>Brian Bird</span></a><span>, written in </span><time><span>2025</span></time><span>, licensed under a </span><a href='http://creativecommons.org/licenses/by-sa/4.0/'><span>Creative Commons Attribution-ShareAlike 4.0 International License</span></a><span>. </span></p><hr /><p>&nbsp;</p><p>&nbsp;</p></div></div>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1>PicoBlocks Projects</h1><h2>Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1652"><a class="md-toc-inner" href="#pico-blocks-ide">Pico Blocks IDE</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1660"><a class="md-toc-inner" href="#pico-bricks-ebooks">Pico Bricks Ebooks</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n1664"><a class="md-toc-inner" href="#projects">Projects</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1666"><a class="md-toc-inner" href="#base-kit-projects">Base Kit Projects</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n1735"><a class="md-toc-inner" href="#advanced-kit-projects">Advanced Kit Projects</a></span></p></div><h2 id='pico-blocks-ide'><span>Pico Blocks IDE</span></h2><p><a href='https://ide.picobricks.com/verticalblocks.html'><span>Pico Bricks IDE</span></a></p><p><span>This can be used for either drag-and-drop visual programming or Python text based programming. It can run programs on a Pico board or a simulator.</span></p><ul><li><p><span>A </span><strong><span>Chrome browser is required</span></strong><span> to use this IDE.</span></p></li><li><p><span>It takes about one minute for  the IDE web page to load.</span></p></li></ul><h2 id='pico-bricks-ebooks'><span>Pico Bricks Ebooks</span></h2><p><a href='../Books/project_book_v2_compressed.pdf'><span>Project Book</span></a>&mdash;<span>This book gives instructions for programming projects using the PicoBlocks MicroBricks IDE, Thonny Python IDE and Arduino IDE with the C programming language.</span></p><p><a href='../Books/WEB-PicoBricks-IDE-ebook-v2_1_compressed.pdf'><span>IDE Book</span></a>&mdash;<span>This book only shows how to program the projects using MicroBricks but gives those instructions in more detail than the other book.</span></p><p><span>Both books have the same projects. Projects 1 through 10 and 15 can be done with just the Pico Blocks Base kit. Projects 11</span>&ndash;<span>14 and 16</span>&ndash;<span>25 require parts that are not included in the base kit.</span></p><h2 id='projects'><span>Projects</span></h2><p><span>These are the projects described in the books listed above. The links take you to the code in the IDE docs pages.</span></p><h3 id='base-kit-projects'><span>Base Kit Projects</span></h3><ol start='' ><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesblink.html'><span>Blink</span></a>&mdash;<span>Make an LED blink on and off</span></p></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesaction-reaction.html'><span>Action - Reaction</span></a>&mdash;<span>Turn on an LED when a button is pressed</span>
+<span>Uses an If, Else block with a true/false condition</span></p></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesautonomous.html'><span>Autonomous Lighting</span></a>&mdash;<span>Use the LDR light sensor to turn on the RGB  LED. Uses:</span></p><ul><li><p><span>Serial Print block to monitor a value</span></p></li><li><p><span>If, Else block with a number condition</span></p></li></ul></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesthermometer.html'><span>Thermometer</span></a>&mdash;<span>Measure the temperature using the temperature sensor (in the temperature and humidity brick) and show it on the OLED display.</span></p></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesgraphicmonitor.html'><span>Graphic Monitor</span></a><span> </span>&mdash;<span>Use the potentiometer to change the brightness of the RGB LED. Uses:</span></p><ul><li><p><span>Variables</span></p></li><li><p><span>Math operation block</span></p></li></ul></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesdominate.html'><span>Dominate the Rhythm</span></a>&mdash;<span>Play a tune on the  buzzer. Start playing when the button is pressed, control the playing speed with the potentiometer. Show the speed on the display. Uses these kinds of blocks:</span></p><ul><li><p><span>Variables</span></p></li><li><p><span>Math operation</span></p></li><li><p><span>Function</span></p></li><li><p><span>If, Else with number condition</span></p></li></ul></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesshowyourreaction.html'><span>Show Your Reaction</span></a>&mdash;<span>Turn on the LED after a random delay, then measure the time it takes a player to press the button. Instructions and score are shown on the cisplay. Uses these types of blocks:</span></p><ul><li><p><span>variables </span></p></li><li><p><span>while with a true/false condition</span></p></li><li><p><span>while with a numeric condition</span></p></li><li><p><span>functions</span></p></li><li><p><span>random number generator</span></p></li></ul></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesmytimer.html'><span>My Timer</span></a>&mdash;<span>Use the potentiometer to set a time in hours, minutes and seconds (press the button after entering each one). Press the button to start the timer. The screen will show the countdown. The buzzer will sound and the RGB LED will light when the time has elapsed. Uses these kinds of blocks:</span></p><ul><li><p><span>Variables</span></p></li><li><p><span>If, else if, else with numeric condition</span></p></li><li><p><span>Functions</span></p></li><li><p><span>While loop with true/false condition</span></p></li><li><p><span>While loop with and condition</span></p></li><li><p><span>Math round operation</span></p></li></ul></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesalarmclock.html'><span>Alarm Clock</span></a>&mdash;<span>When the LDR (light sensor) detects light, it shows a &quot;good morning&quot; message on the display, when the button is pressed, it shows &quot;have a nice day&quot;</span></p></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesknowyourcolor.html'><span>Know Your Color</span></a>&mdash;<span>The display shows a color name while the RGB LED shows different colors. When the color matching the name is shown, press the button. You get a score based on how many times you pressed the button at the right time.</span></p></li></ol><ol start='15' ><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesnightandday.html'><span>Night and Day</span></a>&mdash;<span>A player moves their hand over the LDR when the word &quot;night&quot; is shown on the display.</span></p></li></ol><h3 id='advanced-kit-projects'><span>Advanced Kit Projects</span></h3><ol start='11' ><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesmagiclamp.html'><span>Magic Lamp</span></a>&mdash;<span>Turn on an LED, or alternatively a desk lamp via the relay on the basic board, by clapping. Requires a sound sensor module that is not part of the basic board.</span></p></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplessmartcooler.html'><span>Smart Cooler</span></a>&mdash;<span>Run a fan when the  temperature drops below below a certain level. Requires a motor that is not in the basic kit.</span></p></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesbuzzwiregame.html'><span>Buzz Wire Game</span></a>&mdash;<span>When a wire is connected between two pins of a jumper cable the LED lights and the buzzer sounds. Uses a jumper cable included in the basic kit and requires a piece of wire which is not part of the basic kit.</span></p></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesdinosaurgames.html'><span>Dinosaur Game</span></a>&mdash;<span>Uses the LDR, motor driver and a servo (not included in the base kit) to play the dino game hidden in the Chrome browser (chrome://dino).</span></p></li></ol><ol start='16' ><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplevoicecontrolledcar.html'><span>Voice Controlled Robot Car</span></a>
+<span>Uses the wireless (IR) control keypad</span></p></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/exampletwoaxisrobotarm.html'><span>Two Axis Robot Arm</span></a>
+<span>Requires two servos</span></p></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesmarthouse.html'><span>Smart House</span></a><span> </span></p><p><span>Requires:</span></p><ul><li><p><span>HC-SR501 PIR (infrared) motion sensor</span></p></li><li><p><span>MQ-2 toxic gas sensor</span></p></li></ul></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplespiggybank.html'><span>Piggy Bank</span></a>
+<span>Requires:</span></p><ul><li><p><span>Ultrasonic distance sensor</span></p></li><li><p><span>Servo</span></p></li></ul></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesautomatictrashbin.html'><span>Automatic Trash Bin</span></a>
+<span>Requires:</span></p><ul><li><p><span>Ultrasonic distance sensor</span></p></li><li><p><span>Servo</span></p></li></ul></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesdigitalruler.html'><span>Digital Ruler</span></a>
+<span>Requires an ultrasonic distance sensor</span></p></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesairpiano.html'><span>Air Piano</span></a><span> </span></p></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesmazesolverrobot.html'><span>Maze Solver Robot</span></a><span> </span></p></li><li><p><a href='https://ide.picobricks.com/examplesblockly/ExamplesPages/examplessmartgreenhouse.html'><span>Smart Greenhouse</span></a></p><p><span>Note, the instructions use an ESP8266 WiFi module, but this is not needed with the Pico W on our Pico Blocks boards. In addition, requires:</span></p><ul><li><p><span>Soil moisture sensor</span></p></li><li><p><span>Pump</span></p></li></ul></li></ol><p>&nbsp;</p><hr /><p><a href='http://creativecommons.org/licenses/by-sa/4.0/'><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" referrerpolicy="no-referrer" alt="Creative Commons License"></a><span> Reference materials compiled by </span><a href='https://profbird.dev'><span>Brian Bird</span></a><span>, written in </span><time><span>2025</span></time><span>, licensed under a </span><a href='http://creativecommons.org/licenses/by-sa/4.0/'><span>Creative Commons Attribution-ShareAlike 4.0 International License</span></a><span>. </span></p><hr /><p>&nbsp;</p><p>&nbsp;</p></div></div>
 </body>
 </html>
