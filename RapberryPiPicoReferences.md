@@ -1,8 +1,10 @@
-# Raspberry Pi Pico
+<h1>Links to Raspberry Pi Pico Stuff</h1>
 
-## Reference
+<h2>Contents</h2>
 
-### Raspberyy Pi Pico
+[TOC]
+
+### Raspberry Pi Pico Docs
 
 [Raspberry Pi Pico Family](https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html)
 All the boards in the Pico family
@@ -22,6 +24,12 @@ Getting online with C/C++ or MicroPython on W-series devices.
 
 [DroneBot Workshop&mdash;Raspberry Pi Pico](https://dronebotworkshop.com/pi-pico/)  
 Raspberry Pi Pico – How to Interface (almost) Everything!
+
+## Where to Buy Raspberry Pi Pico Hardware
+
+[PiShop](https://www.pishop.us/)&mdash;An official Raspberry Pi store. Their prices are good but you need to pay shipping which can add a lot to the cost of small orders.
+
+[AliExpress](https://www.aliexpress.us/)&mdash;This company is in China so items take a couple weeks to come by mail, but the prices are very low (RP Pico for less than $3.00) and you can get free shipping if you buy $10 or more of qualifying items.
 
 ### Micro Python
 
@@ -46,15 +54,29 @@ It takes about one minute for each of the IDE web pages to load.
 - [PicoBlocks Jr. IDE](https://ide.picobricks.com/horizontal-blocks/horizontalblocks.html)&mdash;Simplified drag-and-drop visual programming.
 - [PicoBlocks IDE](https://ide.picobricks.com/verticalblocks.html)&mdash;Drag-and-drop visual programming or Python text based programming. Can be run programs on a RP Pico board or a simulator.
 
-### Pico Bricks Ebooks
+### Pico Bricks Ebooks and Docs
+
+[Quick Start](https://picobricks.com/pages/picobricks-quick-starter)&mdash;The same book that is included in the PickBricks kit.
+
+[How to Use PicoBricks](https://picobricks.com/pages/how-to-use-picobricks)&mdash;Provides information on using each of the modules on the PicoBricks development board.
 
 [Project Book](https://picobricks.com/pages/picobricks-project-book-v2)&mdash;This book gives instructions for programming projects using the PicoBlocks MicroBricks drag-and-drop IDE, the Thonny Python IDE and the Arduino IDE with the C programming language.
 
 [IDE Book](https://picobricks.com/pages/picobricks-ide-e-book-v2)&mdash;This book only shows how to program the projects using MicroBricks but gives those instructions in more detail than the other book.
 
-Both books have the same projects. Projects 1 through 11, 13 and 15 can be done with just the Pico Blocks Base kit. Projects 12, 14 and 16 through 25 require components that are not included in the base kit.
+Both books have the same projects. Projects 1 through 11 and 15 can be done with just the Pico Blocks Base kit. Projects 12&ndash;14 and 16&ndash;25 require components that are not included in the base kit.
+
+[Wiki](https://docs.picobricks.com/en/latest/)&mdash;Provides much of the same documentation as found elsewhere but with better organization and some additional details.
+
+[Community Forum](https://community.robotistan.com/)
+
+[GitHub repository](https://github.com/Robotistan/PicoBricks)
 
 
+
+---
+
+Back to the [main page](index.html)
 
 ------
 
