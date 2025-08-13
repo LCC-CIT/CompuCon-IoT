@@ -120,7 +120,9 @@ Uses the wireless (IR) control keypad
     - Soil moisture sensor
     - Pump
 
+---
 
+Back to the [main page](../index.html)
 
 ------
 
