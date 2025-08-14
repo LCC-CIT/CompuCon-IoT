@@ -31,6 +31,8 @@ Raspberry Pi Pico – How to Interface (almost) Everything!
 
 [AliExpress](https://www.aliexpress.us/)&mdash;This company is in China so items take a couple weeks to come by mail, but the prices are very low (RP Pico for less than $3.00) and you can get free shipping if you buy $10 or more of qualifying items.
 
+[PicoBricks](https://picobricks.com/collections/raspberry-pi-robotics-kits)&mdash;Educational development boards, project kits and accessories.
+
 ### Micro Python
 
 [Thonny](https://thonny.org)
