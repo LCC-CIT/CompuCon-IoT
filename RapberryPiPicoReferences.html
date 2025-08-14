@@ -7,7 +7,7 @@
 .mac-os-11 { --title-bar-height: 28px; }
 html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 h1, h2, h3, h4, h5 { white-space: pre-wrap; }
-body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.428571; overflow-x: hidden; background: inherit; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
 iframe { margin: auto; }
 a.url { word-break: break-all; }
 a:active, a:hover { outline: 0px; }
@@ -27,7 +27,7 @@ body.typora-export { padding-left: 30px; padding-right: 30px; }
 #write li > figure:last-child { margin-bottom: 0.5rem; }
 #write ol, #write ul { position: relative; }
 img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
-button, input, select, textarea { color: inherit; font-style: inherit; font-variant-caps: inherit; font-weight: inherit; font-width: inherit; font-size: inherit; line-height: inherit; font-family: inherit; font-size-adjust: inherit; font-kerning: inherit; font-variant-alternates: inherit; font-variant-ligatures: inherit; font-variant-numeric: inherit; font-variant-east-asian: inherit; font-variant-position: inherit; font-variant-emoji: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; font-variation-settings: inherit; }
+button, input, select, textarea { color: inherit; font: inherit; }
 input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
 *, ::after, ::before { box-sizing: border-box; }
 #write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
@@ -54,8 +54,8 @@ thead, tr { break-inside: avoid; break-after: auto; }
 thead { display: table-header-group; }
 table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
 table.md-table td { min-width: 32px; }
-.CodeMirror-gutters { border-right-width: 0px; border-right-style: none; border-right-color: currentcolor; background-color: inherit; }
-.CodeMirror-linenumber { -webkit-user-select: none; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
 .CodeMirror { text-align: left; }
 .CodeMirror-placeholder { opacity: 0.3; }
 .CodeMirror pre { padding: 0px 4px; }
@@ -75,7 +75,7 @@ div.hr:focus { cursor: none; }
 svg { break-inside: avoid; }
 .footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
 .footnotes + .footnotes { margin-top: 0px; }
-.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
 li div { padding-top: 0px; }
 blockquote { margin: 1rem 0px; }
 li .mathjax-block, li p { margin: 0.5rem 0px; }
@@ -88,7 +88,7 @@ blockquote > :first-child, li > :first-child { margin-top: 0px; }
 @media print {
   body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
   #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
-  .typora-export * { print-color-adjust: exact; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
   .typora-export #write { break-after: avoid; }
   .typora-export #write::after { height: 0px; }
   .is-mac table { break-inside: avoid; }
@@ -109,7 +109,7 @@ p > .md-image:only-child { display: inline-block; width: 100%; }
 [contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
 .md-task-list-item { position: relative; list-style-type: none; }
 .task-list-item.md-task-list-item { padding-left: 0px; }
-.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: medium; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
 .math { font-size: 1rem; }
 .md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
 .md-toc-content { position: relative; margin-left: 0px; }
@@ -139,14 +139,14 @@ code, pre, samp, tt { font-family: var(--monospace); }
 kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
 .md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
 code { text-align: left; vertical-align: initial; }
-a.md-print-anchor { white-space: pre !important; border-width: medium !important; border-style: none !important; border-color: currentcolor !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
 .os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
 .md-diagram-panel > svg { max-width: 100%; }
 [lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
 [lang="mermaid"] .node text { font-size: 1rem; }
-table tr th { border-bottom-width: 0px; border-bottom-style: none; border-bottom-color: currentcolor; }
+table tr th { border-bottom: 0px; }
 video { max-width: 100%; display: block; margin: 0px auto; }
-iframe { max-width: 100%; width: 100%; border: medium; }
+iframe { max-width: 100%; width: 100%; border: none; }
 .highlight td, .highlight tr { border: 0px; }
 mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
 .md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
@@ -175,7 +175,7 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
 .outline-content ul { margin-top: 0px; margin-bottom: 0px; }
 .outline-content strong { font-weight: 400; }
-.outline-expander { width: 1rem; height: 1.428571rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
 .outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
 .outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
 .outline-expander:hover::before { content: ""; }
@@ -188,14 +188,14 @@ mark .md-meta { color: rgb(0, 0, 0); }
 .outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
 .outline-label:hover { text-decoration: underline; }
 .outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
-.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left-width: 28px; border-left-style: solid; border-left-color: transparent; border-right-width: 28px; border-right-style: solid; border-right-color: transparent; }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
 .outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
 .outline-item-open > .outline-item > .outline-expander::before { content: ""; }
 .outline-children { display: none; }
 .info-panel-tab-wrapper { display: none; }
 .outline-item-open > .outline-children { display: block; }
 .typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
-.typora-export .outline-item:hover { margin-right: -8px; border-right-width: 8px; border-right-style: solid; border-right-color: transparent; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
 .typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
 .typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
 .typora-export-collapse-outline .outline-children { display: none; }
@@ -209,7 +209,7 @@ mjx-container { break-inside: avoid; }
 .md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
 .md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
 .md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
-.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left-width: 0.25em; border-left-style: solid; border-left-color: rgb(0, 0, 0); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
 .md-alert-text-note { color: rgb(9, 105, 218); }
 .md-alert-text-important { color: rgb(130, 80, 223); }
 .md-alert-text-warning { color: rgb(154, 103, 0); }
@@ -609,22 +609,22 @@ header, .context-menu, .megamenu-content, footer{
 }
 
 
- @media print { @page {margin: 0 0 0 0;} body.typora-export {padding-left: 0; padding-right: 0;} #write {padding:0;}}
-</style><title>RP Pico Links to Resources</title>
+
+</style><title>RapberryPiPicoReferences</title>
 </head>
-<body class='typora-export'><div class='typora-export-content'>
-<div id='write'  class=''><h1 id='raspberry-pi-pico'><span>Raspberry Pi Pico</span></h1><h2 id='reference'><span>Reference</span></h2><h3 id='raspberyy-pi-pico'><span>Raspberyy Pi Pico</span></h3><p><a href='https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html'><span>Raspberry Pi Pico Family</span></a>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h1>Links to Raspberry Pi Pico Stuff</h1><h2>Contents</h2><div class='md-toc' mdtype='toc'><p class="md-toc-content" role="list"><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n3"><a class="md-toc-inner" href="#raspberry-pi-pico-docs">Raspberry Pi Pico Docs</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n57"><a class="md-toc-inner" href="#where-to-buy-raspberry-pi-pico-hardware">Where to Buy Raspberry Pi Pico Hardware</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n10"><a class="md-toc-inner" href="#micro-python">Micro Python</a></span><span role="listitem" class="md-toc-item md-toc-h2" data-ref="n14"><a class="md-toc-inner" href="#pico-bricks">Pico Bricks</a></span><span role="listitem" class="md-toc-item md-toc-h3" data-ref="n22"><a class="md-toc-inner" href="#pico-bricks-ebooks-and-docs">Pico Bricks Ebooks and Docs</a></span></p></div><h3 id='raspberry-pi-pico-docs'><span>Raspberry Pi Pico Docs</span></h3><p><a href='https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html'><span>Raspberry Pi Pico Family</span></a>
 <span>All the boards in the Pico family</span></p><p><a href='https://projects.raspberrypi.org/en/projects?hardware[]=pico'><span>Raspberry Pi Pico projects and tutorials</span></a>&mdash;<span>Raspberry Pi Foundation</span></p><p><a href='https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf'><span>Getting started with Raspberry Pi Pico-series</span></a>&mdash;<span>2024, Raspberry Pi Ltd.</span>
 <span>C/C++ development with Raspberry Pi Pico-series and other</span>
 <span>Raspberry Pi microcontroller-based boards.</span></p><p><a href='https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf'><span>Raspberry Pi Pico-series Python SDK</span></a>&mdash;<span>2024, Raspberry Pi Ltd.</span>
 <span>A MicroPython environment for Raspberry Pi</span>
 <span>microcontrollers. Documentation and tutorials with links to software downloads.</span></p><p><a href='https://datasheets.raspberrypi.com/picow/connecting-to-the-internet-with-pico-w.pdf'><span>Connecting to the Internet with Raspberry Pi Pico W-series</span></a>
-<span>Getting online with C/C++ or MicroPython on W-series devices.</span></p><p><a href='https://dronebotworkshop.com/pi-pico/'><span>DroneBot Workshop</span>&mdash;<span>Raspberry Pi Pico</span></a><span></span><br/><span>Raspberry Pi Pico – How to Interface (almost) Everything!</span></p><h3 id='micro-python'><span>Micro Python</span></h3><p><a href='https://thonny.org'><span>Thonny</span></a>
+<span>Getting online with C/C++ or MicroPython on W-series devices.</span></p><p><a href='https://dronebotworkshop.com/pi-pico/'><span>DroneBot Workshop</span>&mdash;<span>Raspberry Pi Pico</span></a><span></span><br/><span>Raspberry Pi Pico – How to Interface (almost) Everything!</span></p><h2 id='where-to-buy-raspberry-pi-pico-hardware'><span>Where to Buy Raspberry Pi Pico Hardware</span></h2><p><a href='https://www.pishop.us/'><span>PiShop</span></a>&mdash;<span>An official Raspberry Pi store. Their prices are good but you need to pay shipping which can add a lot to the cost of small orders.</span></p><p><a href='https://www.aliexpress.us/'><span>AliExpress</span></a>&mdash;<span>This company is in China so items take a couple weeks to come by mail, but the prices are very low (RP Pico for less than $3.00) and you can get free shipping if you buy $10 or more of qualifying items.</span></p><p><a href='https://picobricks.com/collections/raspberry-pi-robotics-kits'><span>PicoBricks</span></a>&mdash;<span>Educational development boards, project kits and accessories.</span></p><h3 id='micro-python'><span>Micro Python</span></h3><p><a href='https://thonny.org'><span>Thonny</span></a>
 <span>MicroPython IDE</span></p><p><a href='https://micropython.org'><span>MicroPython</span></a>
 <span>Official website</span></p><p><span> </span><a href='https://store.rpipress.cc/products/get-started-with-micropython-on-raspberry-pi-pico-2nd-edition'><span>Get Started with MicroPython on Raspberry Pi Pico - 2nd Edition</span></a>
 <span>Available for purchase as a print or Kindle book.</span></p><h2 id='pico-bricks'><span>Pico Bricks</span></h2><p><a href='https://picobricks.com/'><span>PicoBricks web site</span></a>&mdash;<span>Official web site</span></p><p><a href='https://picobricks.com/pages/ide'><span>PicoBricks IDEs</span></a>
 <span>Web page based Integrated Development Environments (IDEs)</span>
 <span>A </span><strong><span>Chrome browser is required</span></strong><span> to use these IDEs. </span>
-<span>It takes about one minute for each of the IDE web pages to load.</span></p><ul><li><p><a href='https://ide.picobricks.com/horizontal-blocks/horizontalblocks.html'><span>PicoBlocks Jr. IDE</span></a>&mdash;<span>Simplified drag-and-drop visual programming.</span></p></li><li><p><a href='https://ide.picobricks.com/verticalblocks.html'><span>PicoBlocks IDE</span></a>&mdash;<span>Drag-and-drop visual programming or Python text based programming. Can be run programs on a RP Pico board or a simulator.</span></p></li></ul><h3 id='pico-bricks-ebooks'><span>Pico Bricks Ebooks</span></h3><p><a href='https://picobricks.com/pages/picobricks-project-book-v2'><span>Project Book</span></a>&mdash;<span>This book gives instructions for programming projects using the PicoBlocks MicroBricks drag-and-drop IDE, the Thonny Python IDE and the Arduino IDE with the C programming language.</span></p><p><a href='https://picobricks.com/pages/picobricks-ide-e-book-v2'><span>IDE Book</span></a>&mdash;<span>This book only shows how to program the projects using MicroBricks but gives those instructions in more detail than the other book.</span></p><p><span>Both books have the same projects. Projects 1 through 11, 13 and 15 can be done with just the Pico Blocks Base kit. Projects 12, 14 and 16 through 25 require components that are not included in the base kit.</span></p><p>&nbsp;</p><hr /><p><a href='http://creativecommons.org/licenses/by-sa/4.0/'><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" referrerpolicy="no-referrer" alt="Creative Commons License"></a><span> Reference materials compiled by </span><a href='https://profbird.dev'><span>Brian Bird</span></a><span>, written in </span><time><span>2025</span></time><span>, licensed under a </span><a href='http://creativecommons.org/licenses/by-sa/4.0/'><span>Creative Commons Attribution-ShareAlike 4.0 International License</span></a><span>. </span></p><hr /><p>&nbsp;</p><p>&nbsp;</p></div></div>
+<span>It takes about one minute for each of the IDE web pages to load.</span></p><ul><li><p><a href='https://ide.picobricks.com/horizontal-blocks/horizontalblocks.html'><span>PicoBlocks Jr. IDE</span></a>&mdash;<span>Simplified drag-and-drop visual programming.</span></p></li><li><p><a href='https://ide.picobricks.com/verticalblocks.html'><span>PicoBlocks IDE</span></a>&mdash;<span>Drag-and-drop visual programming or Python text based programming. Can be run programs on a RP Pico board or a simulator.</span></p></li></ul><h3 id='pico-bricks-ebooks-and-docs'><span>Pico Bricks Ebooks and Docs</span></h3><p><a href='https://picobricks.com/pages/picobricks-quick-starter'><span>Quick Start</span></a>&mdash;<span>The same book that is included in the PickBricks kit.</span></p><p><a href='https://picobricks.com/pages/how-to-use-picobricks'><span>How to Use PicoBricks</span></a>&mdash;<span>Provides information on using each of the modules on the PicoBricks development board.</span></p><p><a href='https://picobricks.com/pages/picobricks-project-book-v2'><span>Project Book</span></a>&mdash;<span>This book gives instructions for programming projects using the PicoBlocks MicroBricks drag-and-drop IDE, the Thonny Python IDE and the Arduino IDE with the C programming language.</span></p><p><a href='https://picobricks.com/pages/picobricks-ide-e-book-v2'><span>IDE Book</span></a>&mdash;<span>This book only shows how to program the projects using MicroBricks but gives those instructions in more detail than the other book.</span></p><p><span>Both books have the same projects. Projects 1 through 11 and 15 can be done with just the Pico Blocks Base kit. Projects 12</span>&ndash;<span>14 and 16</span>&ndash;<span>25 require components that are not included in the base kit.</span></p><p><a href='https://docs.picobricks.com/en/latest/'><span>Wiki</span></a>&mdash;<span>Provides much of the same documentation as found elsewhere but with better organization and some additional details.</span></p><p><a href='https://community.robotistan.com/'><span>Community Forum</span></a></p><p><a href='https://github.com/Robotistan/PicoBricks'><span>GitHub repository</span></a></p><p>&nbsp;</p><hr /><p><span>Back to the </span><a href='index.html'><span>main page</span></a></p><hr /><p><a href='http://creativecommons.org/licenses/by-sa/4.0/'><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" referrerpolicy="no-referrer" alt="Creative Commons License"></a><span> Reference materials compiled by </span><a href='https://profbird.dev'><span>Brian Bird</span></a><span>, written in </span><time><span>2025</span></time><span>, licensed under a </span><a href='http://creativecommons.org/licenses/by-sa/4.0/'><span>Creative Commons Attribution-ShareAlike 4.0 International License</span></a><span>. </span></p><hr /><p>&nbsp;</p><p>&nbsp;</p></div></div>
 </body>
 </html>
