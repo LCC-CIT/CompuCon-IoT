@@ -1,3 +1,11 @@
+---
+title: RP Pi Links to Resources
+description: Links to information and resources relarted to the Raspberry Pi Pico
+keywords: Raspberry Pi Pico, python, thonny, PicoBlocks, MicroBlocks
+generator: Typora
+author: Brian Bird
+---
+
 <h1>Links to Raspberry Pi Pico Stuff</h1>
 
 <h2>Contents</h2>
