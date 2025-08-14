@@ -1,3 +1,11 @@
+---
+title: RP Pico Links to Resources
+description: Information and resources related to the Raspberry Pi Pico microcontroller
+keywords: IoT, Raspberry Pi Pico, python, thonny, MiicroBlocks, PicoBlocks
+generator: Typora
+author: Brian Bird
+---
+
 # Raspberry Pi Pico
 
 ## Reference

@@ -1,3 +1,11 @@
+---
+title: CompuCon IoT Track
+description: Building and programming devices using Raspberry Pi Pico microcontrollers
+keywords: IoT, Raspberry Pi Pico, microcontroller
+generator: Typora
+author: Brian Bird
+---
+
 <h1>CompuCon IoT Track</h1>
 
 The main thing we will be doing is building electronic projects with Rapberry Pi Pico microcontrollers. These microcontrollers can be use both to build fun, interesting and useful devices and to connect them to other devices, computer networks or the Internet.
