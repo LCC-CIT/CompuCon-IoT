@@ -144,7 +144,7 @@ These are the projects described in the books listed above.
 
 24. **Smart Greenhouse**. Pg. 100
 
-    Note, the instructions use an ESP8266 WiFi module, but this is not needed with the Pico W on our Pico Blocks boards. In addition, requires:
+    Note, the instructions use an ESP8266 WiFi module, but this is not needed with the Pico W on our V2 Pico Blocks boards. This project does require:
 
     - Soil moisture sensor
     - Pump
