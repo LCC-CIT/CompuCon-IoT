@@ -22,35 +22,41 @@ Both books have the same projects. Projects 1 through 10 and 15 can be done with
 
 ## Projects
 
-These are the projects described in the books listed above. The links take you to the code in the IDE docs pages.
+These are the projects described in the books listed above.
 
 ### Base Kit Projects
 
-1. [Blink](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesblink.html)&mdash;Make an LED blink on and off
+1. **Blink**&mdash;Make an LED blink on and off. Pg. 18
 
-2. [Action - Reaction](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesaction-reaction.html)&mdash;Turn on an LED when a button is pressed
-   Uses an If, Else block with a true/false condition
+2. **Action - Reaction**&mdash;Turn on an LED when a button is pressed. Pg. 21
 
-3. [Autonomous Lighting](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesautonomous.html)&mdash;Use the LDR light sensor to turn on the RGB  LED. Uses:
+   - Uses an If, Else block with a true/false condition
+
+3. **Autonomous Lighting**&mdash;Use the LDR light sensor to turn on the RGB  LED. Pg. 24
+   Uses:
 
    - Serial Print block to monitor a value
    - If, Else block with a number condition
 
-4. [Thermometer](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesthermometer.html)&mdash;Measure the temperature using the temperature sensor (in the temperature and humidity brick) and show it on the OLED display.
+4. **Thermometer**&mdash;Measure the temperature using the temperature sensor (in the temperature and humidity brick) and show it on the OLED display. Pg. 28
 
-5. [Graphic Monitor](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesgraphicmonitor.html) &mdash;Use the potentiometer to change the brightness of the RGB LED. Uses:
+5. **Graphic Monitor**&mdash;Use the potentiometer to change the brightness of the RGB LED. Pg. 31
+
+   (Note that it doesn't graph anything nor does it use the diplay.) Uses:
 
    - Variables
    - Math operation block
 
-6. [Dominate the Rhythm](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesdominate.html)&mdash;Play a tune on the  buzzer. Start playing when the button is pressed, control the playing speed with the potentiometer. Show the speed on the display. Uses these kinds of blocks:
+6. **Dominate the Rhythm**&mdash;Play a tune on the  buzzer. Start playing when the button is pressed, control the playing speed with the potentiometer. Show the speed on the display. Pg. 34
+   Uses these kinds of blocks:
 
    - Variables
    - Math operation
    - Function
    - If, Else with number condition
 
-7. [Show Your Reaction](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesshowyourreaction.html)&mdash;Turn on the LED after a random delay, then measure the time it takes a player to press the button. Instructions and score are shown on the cisplay. Uses these types of blocks:
+7. **Show Your Reaction**&mdash;Turn on the LED after a random delay, then measure the time it takes a player to press the button. Instructions and score are shown on the cisplay. Pg. 39
+   Uses these types of blocks:
 
    - variables 
    - while with a true/false condition
@@ -58,7 +64,8 @@ These are the projects described in the books listed above. The links take you t
    - functions
    - random number generator
 
-8. [My Timer](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesmytimer.html)&mdash;Use the potentiometer to set a time in hours, minutes and seconds (press the button after entering each one). Press the button to start the timer. The screen will show the countdown. The buzzer will sound and the RGB LED will light when the time has elapsed. Uses these kinds of blocks:
+8. **My Timer**&mdash;Use the potentiometer to set a time in hours, minutes and seconds (press the button after entering each one). Press the button to start the timer. The screen will show the countdown. The buzzer will sound and the RGB LED will light when the time has elapsed. Pg. 43
+   Uses these kinds of blocks:
 
    - Variables
    - If, else if, else with numeric condition
@@ -67,53 +74,75 @@ These are the projects described in the books listed above. The links take you t
    - While loop with and condition
    - Math round operation
 
-9. [Alarm Clock](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesalarmclock.html)&mdash;When the LDR (light sensor) detects light, it shows a "good morning" message on the display, when the button is pressed, it shows "have a nice day"
+9. **Alarm Clock**&mdash;When the LDR (light sensor) detects light, it shows a "good morning" message on the display, when the button is pressed, it shows "have a nice day". Pg. 48
 
-10. [Know Your Color](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesknowyourcolor.html)&mdash;The display shows a color name while the RGB LED shows different colors. When the color matching the name is shown, press the button. You get a score based on how many times you pressed the button at the right time.
+10. **Know Your Color**&mdash;The display shows a color name while the RGB LED shows different colors. When the color matching the name is shown, press the button. You get a score based on how many times you pressed the button at the right time. Pg. 51
 
 
-15. [Night and Day](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesnightandday.html)&mdash;A player moves their hand over the LDR when the word "night" is shown on the display.
+15. **Night and Day**&mdash;A player moves their hand over the LDR when the word "night" is shown on the display. Pg. 67
 
 ### Advanced Kit Projects
 
-11. [Magic Lamp](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesmagiclamp.html)&mdash;Turn on an LED, or alternatively a desk lamp via the relay on the basic board, by clapping. Requires a sound sensor module that is not part of the basic board.
-12. [Smart Cooler](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplessmartcooler.html)&mdash;Run a fan when the  temperature drops below below a certain level. Requires a motor that is not in the basic kit.
-13. [Buzz Wire Game](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesbuzzwiregame.html)&mdash;When a wire is connected between two pins of a jumper cable the LED lights and the buzzer sounds. Uses a jumper cable included in the basic kit and requires a piece of wire which is not part of the basic kit.
-14. [Dinosaur Game](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesdinosaurgames.html)&mdash;Uses the LDR, motor driver and a servo (not included in the base kit) to play the dino game hidden in the Chrome browser (chrome://dino).
+11. **Magic Lamp**&mdash;Turn on an LED, or alternatively a desk lamp via the relay on the basic board, by clapping. Requires a <u>sound sensor</u> module that is not part of the basic board. Pt. 55
+12. **Smart Cooler**&mdash;Run a fan when the  temperature drops below below a certain level. Requires a <u>motor</u> that is not in the basic kit. Pg. 58
+13. **Buzz Wire Game**&mdash;When a wire is connected between two pins of a jumper cable the LED lights and the buzzer sounds. Uses a jumper cable included in the basic kit and requires <u>a piece of wire</u> which is not part of the basic kit. Pg. 61
+14. **Dinosaur Game**&mdash;Uses the LDR, motor driver and a <u>servo</u> (not included in the base kit) to play the dino game hidden in the Chrome browser (chrome://dino). Pg. 64
 
 
-16. [Voice Controlled Robot Car](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplevoicecontrolledcar.html)
-Uses the wireless (IR) control keypad
+16. **Voice Controlled Robot Car**&mdash; A car that is controlled by an IR keypad or optionally by a smart-phone app that accepts voice control.   Pg. 71
+    Uses all the same extra components as the Maze Solver Robot car, as well as:
 
-6. [Two Axis Robot Arm](https://ide.picobricks.com/examplesblockly/ExamplesPages/exampletwoaxisrobotarm.html)
-   Requires two servos
+    -  <u>wireless (IR) control keypad</u>
+    - IR sensor module
 
-7. [Smart House](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesmarthouse.html) 
+17. **Two Axis Robot Arm**. Pg. 74
+    Requires <u>two servos</u>.
 
-   Requires:
+18. **Smart House**. Pg. 82
 
-   -  HC-SR501 PIR (infrared) motion sensor
-   - MQ-2 toxic gas sensor
+    Requires:
 
-8. [Piggy Bank](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplespiggybank.html)
-   Requires:
+    -  HC-SR501 PIR (infrared) <u>motion sensor</u>
+    - MQ-2 <u>toxic gas sensor</u>
 
-   - Ultrasonic distance sensor
-   - Servo
+19. **Piggy Bank**. Pg. 86
+    Requires:
 
-9. [Automatic Trash Bin](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesautomatictrashbin.html)
-   Requires:
-   - Ultrasonic distance sensor
-   - Servo
+    - <u>Ultrasonic distance sensor</u>
+    - <u>Servo</u>
 
-10. [Digital Ruler](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesdigitalruler.html)
-    Requires an ultrasonic distance sensor
+20. **Automatic Trash Bin**. Pg. 91
+    Requires:
 
-11. [Air Piano](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesairpiano.html) 
+    - <u>Ultrasonic distance sensor</u>
+    - <u>Servo</u>
 
-12. [Maze Solver Robot](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplesmazesolverrobot.html) 
+21. **Digital Ruler**. Pg. 93
+    Requires an <u>ultrasonic distance sensor</u>
 
-13. [Smart Greenhouse](https://ide.picobricks.com/examplesblockly/ExamplesPages/examplessmartgreenhouse.html)
+22. **Air Piano**. Pg. 95
+    Requires:
+
+    - <u>Ultrasonic distance sensor</u>
+
+23. **Maze Solver Robot**. Pg. 97
+
+    *Notes:*
+
+    1. *that the code in the IDE Docs uses motor control blocks for V1, replance them with V2 blocks.*
+
+    2. *There are construction instructions in the Resources section at the end of the IDE Project book.*
+
+    3. *Upload the Python code to the RP Pi Pico on the car.*
+
+       Requires:
+
+    - Two <u>motors</u>
+    - <u>Untrasonic distance sensor</u>
+    - <u>Car body and wheel kit</u>
+    - <u>Battery holder</u> and three AA batteries
+
+24. **Smart Greenhouse**. Pg. 100
 
     Note, the instructions use an ESP8266 WiFi module, but this is not needed with the Pico W on our Pico Blocks boards. In addition, requires:
 
